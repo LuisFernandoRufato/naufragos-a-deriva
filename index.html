@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Banda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Náufragos à Deriva</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="#" onclick="showSection('photos')">Fotos</a></li>
+                <li><a href="#" onclick="showSection('videos')">Vídeos</a></li>
+                <li><a href="#" onclick="showSection('shows')">Próximos Shows</a></li>
+                <li><a href="#" onclick="showSection('links')">Links Externos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="photos" class="content-section">
+            <h2>Fotos</h2>
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto2.jpg" alt="Foto 2">
+                <img src="foto3.jpg" alt="Foto 3">
+            </div>
+        </section>
+        <section id="videos" class="content-section">
+            <h2>Vídeos</h2>
+            <div class="video-gallery">
+                <iframe src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="shows" class="content-section">
+            <h2>Próximos Shows</h2>
+            <ul>
+                <li>Show 1 - Data 1 - Local 1</li>
+                <li>Show 2 - Data 2 - Local 2</li>
+                <li>Show 3 - Data 3 - Local 3</li>
+            </ul>
+        </section>
+        <section id="links" class="content-section">
+            <h2>Links Externos</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/banda" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/banda" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/banda" target="_blank">YouTube</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
