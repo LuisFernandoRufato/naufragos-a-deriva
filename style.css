@@ -9,8 +9,7 @@ header{
     color: whitesmoke;
 }
 header, section h2, section h3, form button{
-    font-family: "Bungee", sans-serif;
-    font-weight: normal;
+    font-family: "Rock Salt", cursive;
 }
 header nav li{
     display: inline;
@@ -22,7 +21,8 @@ header nav li a{
     text-decoration: none;
 }
 body, input, textarea{
-    font-family: "Roboto", sans-serif;
+    font-family: "Metal", serif;
+    font-size: 90%;
 }
 .container{
     max-width: 1280px;
@@ -51,7 +51,7 @@ section h2{
 section p{
     margin-bottom: 8px;
 }
-.store-front{
+.page-front{
     margin-right: 32px;
 }
 .social-links img{
