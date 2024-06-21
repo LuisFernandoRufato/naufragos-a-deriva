@@ -1,56 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site da Banda</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Banda - Náufragos à Deriva</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Náufragos à Deriva</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="#" onclick="showSection('photos')">Fotos</a></li>
-                <li><a href="#" onclick="showSection('videos')">Vídeos</a></li>
-                <li><a href="#" onclick="showSection('shows')">Próximos Shows</a></li>
-                <li><a href="#" onclick="showSection('links')">Links Externos</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Náufragos à Deriva (N.A.D)</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre a banda</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="photos" class="content-section">
-            <h2>Fotos</h2>
-            <div class="gallery">
-                <img src="foto1.jpg" alt="Foto 1">
-                <img src="foto2.jpg" alt="Foto 2">
-                <img src="foto3.jpg" alt="Foto 3">
+    <section id="about">
+        <div class="container">
+            <img class="store-front" src="./images/Banda-Náufragos.PNG" alt="Foto da banda Náufragos à Deriva">
+            <div>
+                <h2>Sobre a banda</h2>
+                <p>Náufragos à Deriva, é uma banda de rock alternativo formada em Sorocaba/SP no ano de 2017.
+                    Voltada para um repertório de músicas que nos levam aos mais diversos e profundos sentimentos, 
+                    os músicos prezam pela poética em suas letras e melodias. A banda teve uma longa pausa no ano de 2020, 
+                    retornando em janeiro de 2023. Desde sua formação, a Náufragos já gravou diversas músicas em estúdio, 
+                    e agora no início de 2024 estão lançando 4 dessas músicas, que farão parte de seu primeiro EP.</p>
+                <br><br>
+                <h2>Formação: </h2>
+                <p>Lucas Caruso - Vocalista</p>
+                <p>Luis Fernando - Guitarrista</p>
+                <p>Maiko Roberto - Baixista</p>
+                <p>Gerly Miguel - Baterista</p>
+                <br><br>
+                <audio controls src="./audio/Beatriz.mpeg">Beatriz</audio>
+                <p>Escute agora nosso primeiro single - Beatriz</p>
             </div>
-        </section>
-        <section id="videos" class="content-section">
-            <h2>Vídeos</h2>
-            <div class="video-gallery">
-                <iframe src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <input type="tel" placeholder="Seu telefone (opcional)">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.instagram.com/naufragos.banda" title="Siga-nos no Instagram" target="_blank"></a>
+                            <img src="./images/instagram.png" alt="Logo do Instagram">
+                        </li>
+                        <li>
+                            <a href="https://linktr.ee/naufragosaderiva?utm_source=linktree_profile_share" title="Escute nosso primeiro single - Beatriz" target="_blank"></a>
+                            <img src="./images/Logo-Naufragos.jpeg" alt="Logo da Naúfragos">
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=oF3UIo-feo4&list=LL&index=19&ab_channel=Release-Topic" title="Visite nosso canal no Youtube" target="_blank"></a>
+                            <img src="./images/youtube.png" alt="Logo do Youtube">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Próximos shows</h3>
+                    <ul>
+                        <li>22/06/2024 - 19h30 - L&L Music Bar (Sorocaba/SP)</li>
+                        <li>13/07/2024 - 13h00 - 3° Edição Cultura na praça (Sorocaba/SP)</li>
+                        <li>11/08/2024 - 10h00 - Avenida Paulista (São Paulo/SP)</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <section id="shows" class="content-section">
-            <h2>Próximos Shows</h2>
-            <ul>
-                <li>Show 1 - Data 1 - Local 1</li>
-                <li>Show 2 - Data 2 - Local 2</li>
-                <li>Show 3 - Data 3 - Local 3</li>
-            </ul>
-        </section>
-        <section id="links" class="content-section">
-            <h2>Links Externos</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/banda" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/banda" target="_blank">Instagram</a></li>
-                <li><a href="https://www.youtube.com/channel/banda" target="_blank">YouTube</a></li>
-            </ul>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Náufragos à Deriva - Todos os direitos reservados - 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
